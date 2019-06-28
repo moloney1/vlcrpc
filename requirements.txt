@@ -1,4 +1,5 @@
 pynput==1.4.2
+pypresence==3.3.2
 python-magic==0.4.15
 python-vlc==3.0.6109
 python-xlib==0.25
