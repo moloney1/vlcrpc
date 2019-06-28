@@ -1,5 +1,5 @@
 class TitleParser:
-	#	The-Office_0-01.avi
+	#	Show-Title_0-01.avi
 	def __init__(self, path):
 		self.info = path.split(".")
 		self.info = str(self.info[0])

@@ -1,10 +1,12 @@
 #!/usr/bin/env python
-from pynput import keyboard
-import argparse
+import os
 import threading
+import argparse
+
+from pynput import keyboard
+
 from pl import Player
 from title_parser import TitleParser
-import os
 from discord_presence import DiscordPresence
 
 parser = argparse.ArgumentParser(description="vlcwrapper")
@@ -13,7 +15,9 @@ args = parser.parse_args()
 
 fname = args.filepath.split("/")
 fname = fname[len(fname) - 1]
+
 video_info = TitleParser(fname)
+
 pres = DiscordPresence(str(video_info))
 
 player = Player(os.path.abspath(args.filepath))

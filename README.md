@@ -13,3 +13,10 @@ It's really just a basic wrapper around VLC using the [VLC bindings for Python](
 shows:
 
 ![screenshot](./screenie.png)
+
+Requires:
+* Python 3.6.x
+* A present VLC install
+* The Discord desktop client to be running
+
+Untested on Windows.
